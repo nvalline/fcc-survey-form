@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Small Business Website Survey</title>
+
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Small Business Website Survey</h1>
+      <p id="description">Thank you for helping us understand your needs.</p>
+    </header>
+    <main class="container">
+      <form id="survey-form">
+        <div class="form-element">
+          <label for="name" id="name-label">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter your full name"
+            required
+          />
+        </div>
+        <div class="form-element">
+          <label for="email" id="email-label">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email address"
+            required
+          />
+        </div>
+        <div class="form-element">
+          <label for="business" id="business-label"
+            >Business Name (optional)</label
+          >
+          <input
+            type="text"
+            name="business"
+            id="business"
+            placeholder="Enter your business name"
+          />
+        </div>
+        <div class="form-element">
+          <p>Do you currently have a website?</p>
+          <label class="label-text">
+            <input
+              type="radio"
+              name="have-website"
+              value="Yes"
+              class="input-radio"
+              checked
+            />
+            Yes
+          </label>
+          <label class="label-text">
+            <input
+              type="radio"
+              name="have-website"
+              value="No"
+              class="input-radio"
+            />
+            No
+          </label>
+        </div>
+        <div class="form-element">
+          <p>How was your website created?</p>
+          <select name="website-created" id="dropdown" required>
+            <option disabled selected value>Select the best option</option>
+            <option value="no-website">Do not have a website</option>
+            <option value="in-house">Built in-house</option>
+            <option value="web-builder">Website Builder (wix.com, etc.)</option>
+            <option value="firm">Design firm</option>
+          </select>
+        </div>
+        <div class="form-element">
+          <label for="number" id="number-label"
+            >How old is your website? (years)</label
+          >
+          <input
+            type="number"
+            name="number"
+            id="number"
+            min="0"
+            max="31"
+            placeholder="Enter zero if you do not have a website"
+            required
+          />
+        </div>
+        <div class="form-element">
+          <p>What is the main objective of your website?</p>
+          <label class="label-text">
+            <input
+              type="checkbox"
+              name="feature"
+              value="lead-capture"
+              class="input-checkbox"
+            />
+            Lead Capture
+          </label>
+          <label class="label-text">
+            <input
+              type="checkbox"
+              name="feature"
+              value="online-sales"
+              class="input-checkbox"
+            />
+            Online Sales
+          </label>
+          <label class="label-text">
+            <input
+              type="checkbox"
+              name="feature"
+              value="customer-service"
+              class="input-checkbox"
+            />
+            Customer Service
+          </label>
+          <label class="label-text">
+            <input
+              type="checkbox"
+              name="feature"
+              value="brand-building"
+              class="input-checkbox"
+            />
+            Brand Building
+          </label>
+          <label class="label-text">
+            <input
+              type="checkbox"
+              name="feature"
+              value="informative"
+              class="input-checkbox"
+            />
+            Informative
+          </label>
+        </div>
+        <div class="form-element">
+          <p>Additional Comments</p>
+          <textarea
+            name="comment"
+            id="comments"
+            placeholder="Enter your comments here..."
+          ></textarea>
+        </div>
+        <div class="form-element">
+          <p>
+            Would you like to receive more information about our website
+            services?
+          </p>
+          <label>
+            <input
+              type="radio"
+              name="info"
+              value="Yes"
+              class="input-radio"
+              checked
+            />
+            Yes
+          </label>
+          <label>
+            <input type="radio" name="info" value="No" class="input-radio" />
+            No
+          </label>
+        </div>
+        <div class="form-element btn-submit">
+          <button type="submit" id="submit" class="submit-button">
+            SUBMIT
+          </button>
+        </div>
+      </form>
+    </main>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
